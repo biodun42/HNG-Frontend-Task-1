@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG Front-end Task Stage-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Display Header With Slack Display Name and Profile Picture -->
+    <header>
+      <h1 data-testid="slackDisplayName">Moloman</h1>
+      <img
+        src="images/IMG_20230416_093556_630_cropped_via_10015_io_218x250_via_10015_io.png"
+        alt="Profile Picture"
+        data-testid="slackProfilePicture"
+      />
+    </header>
+    <!-- Display Main Content With Current Time, Day, Email, and Tech Goals -->
+    <main>
+      <h2>Current-Day, Current-Time, and Slack Email</h2>
+      <p data-testid="currentTimeUTC">
+        Current Time (UTC): <span id="time"></span>
+      </p>
+      <p data-testid="currentDay">Current Day: <span id="day"></span></p>
+      <p data-testid="slackEmail">Muhammedabiodun42@gmail.com</p>
+      <h2>My Tech Goals for the Next 2 Years</h2>
+      <div class="tech-goals-container">
+        <div class="tech-goal">
+          <h1>Learn advanced JavaScript</h1>
+          <p>Delve deeper into the intricacies of JavaScript to build robust applications.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Contribute to open-source projects</h1>
+          <p>Give back to the community by contributing to open-source initiatives.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Build a portfolio of web applications</h1>
+          <p>Create a collection of web apps to showcase my skills and progress.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Master front-end frameworks like React and Vue.js</h1>
+          <p>Gain expertise in popular front-end frameworks for better UI development.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Gain proficiency in back-end development with Node.js and Express</h1>
+          <p>Become skilled in back-end technologies to build full-stack applications.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Participate in hackathons and coding competitions</h1>
+          <p>Engage in competitive coding to sharpen problem-solving skills.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Start a tech blog to share knowledge and experiences</h1>
+          <p>Write articles to document my journey and help others learn.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Build and contribute to personal and community-driven projects</h1>
+          <p>Collaborate on projects that make a positive impact on the community.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Enhance problem-solving skills with algorithms and data structures</h1>
+          <p>Improve my ability to solve complex problems efficiently.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Learn about cybersecurity and best practices for secure coding</h1>
+          <p>Understand the importance of security in software development.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Explore artificial intelligence and machine learning basics</h1>
+          <p>Gain foundational knowledge in AI and ML to expand my skill set.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Network with other professionals in the tech industry</h1>
+          <p>Build connections with peers to learn and grow together.</p>
+        </div>
+        <div class="tech-goal">
+          <h1>Attend tech conferences and workshops</h1>
+          <p>Participate in events to stay updated with the latest trends and technologies.</p>
+        </div>
+      </div>
+    </main>
+    <!-- Display Footer Links For the Project -->
+    <footer>
+      <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+      <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+      <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+        >Scrape Any Web</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

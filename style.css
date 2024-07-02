@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+  margin: 0.5em 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #1abc9c;
+  font-family: 'Artifika', serif;
+}
+main {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+main h2 {
+  text-align: center;
+  color: #1abc9c;
+  font-size: 2em;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  font-weight: 700;
+  font-family: 'Artifika', serif;
+}
+.tech-goals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tech-goal {
+  background: #2c2c2c;
+  margin: 0.75em 0;
+  padding: 1.5em;
+  border: 1px solid #1abc9c;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+}
+.tech-goal h1 {
+  margin: 0;
+  font-weight: bold;
+  color: #1abc9c;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  font-family: 'Times New Roman', Times, serif;
+}
+.tech-goal p {
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+.tech-goal:hover {
+  background-color: #121212;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9);
+}
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #66bbff;
+  text-decoration: underline;
+}
+p[data-testid="currentTimeUTC"],
+p[data-testid="currentDay"],
+p[data-testid="slackEmail"] {
+  text-align: center;
+  background: #2c2c2c;
+  margin: 0.75em 0;
+  padding: 1em;
+  border: 1px solid #1abc9c;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 600px) {
+  header,
+  main {
+    padding: 10px;
+  }
+  main {
+    padding: 2rem 1rem;
+    border-radius: 30px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .tech-goal {
+    flex: 1 1 100%;
+  }
+}
