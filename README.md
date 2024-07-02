@@ -1,4 +1,4 @@
-# HNGx Program Stage 1
+# HNG 11 Program Stage 1
 
 ## Skills used in building this website
 
